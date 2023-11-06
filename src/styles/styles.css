@@ -182,10 +182,41 @@
     color: #353535;
     font-size: 60px;
     font-family: 'Lato', sans-serif;
-    filter: drop-shadow(1mm 1mm 2mm rgb(255, 255, 255));
+    filter: drop-shadow(0mm 0mm 2mm rgb(255, 255, 255));
     margin: 0;
     color: #7e0e0e;
   }
+
+  h3 {
+    position: relative;
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline;
+    margin: 0;
+  }
+
+  .blogPosts .postList {
+    position: relative;
+    text-align: center;
+    color: #7e0e0e;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+  }
+  
+  ul {
+    position: relative;
+    text-align: left;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+  }
+
+
+ 
  
   p {
     font-family: 'Lato', sans-serif;
