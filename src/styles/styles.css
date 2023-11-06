@@ -172,6 +172,7 @@
     width: 50%;
     height: 30%;
     margin: auto;
+    margin-top: 200px;
     text-align: center;
   }
   
@@ -181,15 +182,37 @@
     color: #353535;
     font-size: 60px;
     font-family: 'Lato', sans-serif;
+    filter: drop-shadow(1mm 1mm 2mm rgb(255, 255, 255));
     margin: 0;
     color: #7e0e0e;
   }
-  
+ 
   p {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     text-align: center;
     font-size: 30px;
     color: #000000;
+    filter: drop-shadow(1mm 0mm 2mm rgb(255, 255, 255));
     margin: 0;
+  }
+  
+  .image {
+    object-fit: contain;
+    margin-bottom: 300px;
+    opacity: 70%;
+    filter: drop-shadow(2mm 1mm 5mm rgb(210, 0, 0));
+    height: 300px;
+    width: 300px;
+  }
+
+  .image img{
+    display: inline-flex;
+    margin: auto;
+    height: auto;
+    width: 100%;
+  }
+  img:hover{
+    opacity: 100%;
+    filter: drop-shadow(2mm 5mm 5mm rgb(255, 255, 255));
   }
