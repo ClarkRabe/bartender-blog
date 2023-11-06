@@ -1,0 +1,88 @@
+---
+import Navigation from '../components/nav.astro';
+import Footer from '../components/footer.astro';
+import "../styles/styles.css";
+const pageTitle = 'About Me';
+
+const identity = {
+    firstName: "Clark ",
+    lastName: "Rabe",
+    age: 27,
+    location: "Spokane, WA",
+    occupation: "Bartender at Anthony's at Spokane Falls",
+    hobbies: ["video games", "coding", "football", "soccer"], };
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js", "Java", "C++", "C#"];
+
+const skillColor = "navy";
+const hobbyColor = "green";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        
+		<title>{pageTitle}</title>
+        <style define:vars={{skillColor}}>
+            h1 {
+                color: purple;
+                font-size: 2rem;
+                text-decoration: underline;
+            }
+            h3 {
+                color: purple;
+                font-size: 1.5rem;
+            }
+            .skill {
+                color: var(--skillColor);
+                font-weight: bold;
+            }
+        </style>
+	</head>
+	<body>
+            <input type="checkbox" id="check">
+            <label for="check">
+              <i class="fas fa-bars" id="btn"></i>
+              <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+              <header>Menu</header>
+              <a href="/" class="active">
+                <i class="fas fa-qrcode"></i>
+                <span>Home Page</span>
+              </a>
+              <a href="/blog/">
+                <i class="fas fa-stream"></i>
+                <span>Blog Posts</span>
+              </a>
+              <a href="/about/">
+                <i class="far fa-question-circle"></i>
+                <span>About Me</span>
+              </a>
+           
+            </div>
+
+
+		<h1>{pageTitle}</h1>
+
+        <h3>Hello, my name is {identity.firstName} {identity.lastName} and here are a few things about me: </h3>
+        <ul>
+            <li>I am currently a senior at Eastern Washington University in the Computer Science Program</li>
+            <li>I am {identity.age} years old and live in {identity.location}</li>
+            <li>In order to pay rent and get myself through school I am a {identity.occupation}</li>
+        </ul>
+
+        <h4>Here are a few of my hobbies: </h4>
+        <ul>
+            {identity.hobbies.map((hobby) => <li class = "hobby">{hobby}</li>)}
+        </ul>
+        <h4>Here are a few of my skills: </h4>
+        <ul>
+            {skills.map((skill) => <li class= "skill">{skill}</li>)}
+        </ul>
+	</body>
+</html>

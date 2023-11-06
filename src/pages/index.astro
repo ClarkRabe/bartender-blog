@@ -1,0 +1,47 @@
+---
+import '../styles/styles.css';
+import { Image } from 'astro:assets';
+import homePageImage1 from "../images/img_smoke.jpg";
+import homePageImage2 from "../images/img_tall_drink.jpg";
+---
+
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8"/>
+    	<meta name="viewport" content="width=device-width" />
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	   </head>
+	   <body>
+		 <input type="checkbox" id="check">
+		 <label for="check">
+		   <i class="fas fa-bars" id="btn"></i>
+		   <i class="fas fa-times" id="cancel"></i>
+		 </label>
+		 <div class="sidebar">
+		   <header>Menu</header>
+		   <a href="/" class="active">
+			 <i class="fas fa-qrcode"></i>
+			 <span>Home Page</span>
+		   </a>
+		   <a href="/blog/">
+			 <i class="fas fa-stream"></i>
+			 <span>Blog Posts</span>
+		   </a>
+		   <a href="/about/">
+			 <i class="far fa-question-circle"></i>
+			 <span>About Me</span>
+		   </a>
+		
+		 </div>
+	 </body>
+		 
+	<div class="frame">
+	 	<h2>CRAFTED MIXOLOGY</h2>
+	   <p>Tales from behind the Bar</p>
+	 
+	 </div>  
+		 
+	 </body>
+</html>

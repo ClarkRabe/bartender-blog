@@ -1,0 +1,52 @@
+---
+import Navigation from '../components/nav.astro';
+import Footer from '../components/footer.astro';
+import "../styles/styles.css";
+---
+<html lang="en">
+  <head>
+		<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	   </head>
+	   <body>
+		 <input type="checkbox" id="check">
+		 <label for="check">
+		   <i class="fas fa-bars" id="btn"></i>
+		   <i class="fas fa-times" id="cancel"></i>
+		 </label>
+		 <div class="sidebar">
+		   <header>Menu</header>
+		   <a href="/" class="active">
+			 <i class="fas fa-qrcode"></i>
+			 <span>Home Page</span>
+		   </a>
+		   <a href="/blog/">
+			 <i class="fas fa-stream"></i>
+			 <span>Blog Posts</span>
+		   </a>
+		   <a href="/about/">
+			 <i class="far fa-question-circle"></i>
+			 <span>About Me</span>
+		   </a>
+		
+		 </div>
+	 </body>
+		 
+	<div class="blog_frame">
+	 	<h2>A Bartenders Diary</h2>
+	   <p>Pour yourself a drink</p>
+	   <br>
+	   <ul class = "blogPosts">
+		<li class = "postList"><a href = "/posts/post-1/">The Basics</a></li>
+		<br />
+		<li class = "postList"><a href = "/posts/post-2/">The Classics</a></li>
+		<br />
+		<li class = "postList"><a href = "/posts/post-3/">Chaos Ensues</a></li>
+	   </ul>
+	 
+	 </div>  
+		 
+	 </body>
+</html>
